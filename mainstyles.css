@@ -20,7 +20,7 @@ a {
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 3;
   height: 70px;
@@ -37,7 +37,7 @@ a {
 .header li a {
   display: block;
   padding: 20px 20px;
- 
+ color: #333;
   text-decoration: none;
 }
 .btn-success{
@@ -142,6 +142,7 @@ margin-right: 20px;
   }
   .header li a {
     padding: 20px 20px;
+ 
   }
   .header .menu {
     clear: none;
@@ -154,6 +155,7 @@ margin-right: 20px;
   .btn-success{
     position: relative;
    margin-left: 100px;
+   margin-top: 20px;
   }
 }
 
@@ -475,6 +477,38 @@ margin-top: -230px;
 }
 .get{
   font-size: 20px;
+}
+ }
+ @media(max-width:1024px){
+.sign ,.work-h1,.show{
+  font-size: 25px;
+}
+.feature{
+  font-size: 25px;
+  margin-top: 240px;
+}
+.para1,.para2,.para4,.para5{
+  font-size: 20px;
+}
+.para1{
+  margin-right: 200px;
+  word-wrap: break-word;
+  width: 300px;
+}
+.img4{
+  float: left;
+  margin-left: -300px;
+ 
+
+}
+.para4{
+  margin-right: -200px;
+}
+.show{
+  margin-right: 230px;
+}
+#line{
+  margin-top: 200px;
 }
  }
  
