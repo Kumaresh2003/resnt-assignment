@@ -74,12 +74,30 @@ margin-top: 10px;
   font-size: 15px;
     margin:0 0 20px 20px ;
     border: 1px solid #c7c6c6;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .btn1:hover{
 background-color: rgb(203, 235, 224);
 color: lightseagreen;
-border: 1px solid rgb(203, 235, 224);
+border: 1px solid lightseagreen;
+}
+#container{
+    background-color: #fff;
+    text-align: center;
+    height: 320px;
+}
+.btn4:hover{
+    background-color:rgb(236, 154, 154);
+    border: none;
+    
+}
+#contant3{
+    height: 480px;
+}
+@media(max-width:587px) {
+    #contant3{
+        margin-top: 20px;
+    }
 }
 </style>
 </head>
@@ -89,7 +107,7 @@ border: 1px solid rgb(203, 235, 224);
              <img src="./image/logo.png">
             <h1 class="text-success">interviewsby.ai</h1></div>
     
-        <div class="d-flex justify-content-md-end  ">
+        <div class="d-flex justify-content-md-end ">
             <p class="me-3">Pricing</p>
             <button class="bg-white ">Sign with Google</button>
         </div>
@@ -104,7 +122,7 @@ border: 1px solid rgb(203, 235, 224);
     Try now for free
 </button>        
 </div>
-        <div class="col-12 col-lg-6 col-md-6 contant1 ms-2" id="contant3">
+        <div class="col-12 col-lg-6 col-md-6 contant1 ms-2 mt-sm-2 " id="contant3">
 <h3>Turn a <span>job description</span> into <span>interview questions</span> to practice with:</h3>
          <div class="col">
             <div class="row-md-4 row-lg-4 row-sm-6">
@@ -114,7 +132,18 @@ border: 1px solid rgb(203, 235, 224);
             <button class="btn1">Software Engineer</button>
             <button class="btn1">Marketing Specialist</button>
             </div>
-          
+          <div class="container" id="container">
+            <div><h5>Can you walk me through a product you've managed from its conceptual phase to launch, highlighting the key milestones?</h5></div>
+            <span class="display-4 " style="font-weight: 600; color: #c7c6c6; ">0:0/2:00</span>
+            <div>
+            <button class="btn4 mt-2" style="width: 50px; height: 50px; background-color: brown; border-radius: 50px; color: #fff; border:  1px solid brown;"></button>
+         </div>
+         <hr class="pt-2" >
+         <h6  class="d-flex justify-content-md-start pt-3">Feedback</h6>
+         <hr >
+         <h6 class="d-flex justify-content-md-start pt-3">Message</h6>
+        
+        </div>
          </div>   
         </div>
     </div>
