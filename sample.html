@@ -117,6 +117,9 @@ border: 1px solid lightseagreen;
     #contant3{
         margin-top: 20px;
     }
+    .div{
+        display: none;
+    }
 #menu{
 
    flex-direction: column;
@@ -203,6 +206,13 @@ video{
     background-color: #f1eeee;
    
    }
+   .store{
+    width: 350px;
+    margin-left: 20px;
+    background-color: hsl(0, 5%, 83%);
+    margin-top: 20px;
+   
+   }
 </style>
 
 </head>
@@ -216,7 +226,7 @@ video{
             <div >
                 <button class="btn-1 "> <i class="fa-solid fa-bars" onclick="myFunction()"></i></button>
             </div>
-            <div class="div d-flex justify-content-center d-sm-none"  id="menu"  >
+            <div class="div d-flex justify-content-center "  id="menu"  >
             <p class="me-3" id="p1">Pricing</p>
             <button class="bg-white ">Sign with Google</button>
         </div>
@@ -363,5 +373,25 @@ video{
     <button style="background-color: rgb(179, 229, 179); border: 1px solid rgb(179, 229, 179);color:rgb(66, 228, 66); border-radius: 10px;"
     >Success stories</button>
     </div>
+    <div class="mt-3 d-flex justify-content-center" >
+    <h2 style="font-weight: 500;">Interviews by AI helped these job seekers and <span style="color: rgb(16, 214, 99);">36,000+</span> more</h2>
+</div>
+<div  class="mt-3 d-flex justify-content-center" >
+    <h5>You're a mock interview away from your dream job.   </h5>
+</div>
+<div class="container">
+    <div class="row">
+        <div class=" store"><h3 style="text-align: center; font-size: 18px;">Henry Tran • Marketing Operations</h3>
+           <p style="text-align: center;"> "I used your product for an interview I had yesterday, and sure enough one of the generated questions came up"</p>
+        </div>
+        <div class="store"><h3 style="text-align: center; font-size: 18px;">Jenny Jiang • Software Engineer</h3>
+        <p style="text-align: center;">"Great tool for anyone who's preparing for an interview in tech, helped me ace my interviews!"</p>
+        </div>
+        <div class=" store"><h3 style="text-align: center; font-size: 18px;">Charles Burr • UX Designer
+        </h3>
+        <p style="text-align: center;">"Love interviewsby.ai it's been helping me so much prepping for a big interview tomorrow!"</p>
+    </div>
+    </div>
+</div>
 </body>
 </html>

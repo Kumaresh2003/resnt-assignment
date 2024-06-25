@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        button{
+            width: 100px;
+            margin: 30px 0 0px 180px;
+        }
+        #box{
+            width: 100px;
+        animation-name: sideLeft;
+        animation-duration: 3s;
+
+img{
+    width: 600px;
+    margin: 190px 0 0px 90px;
+}
+        }
+        .header-h1{
+color: red;
+text-align: center;
+margin-top: 20px;
+        }
+        @keyframes sideLeft{
+        from{
+            transform: translateX(300%);
+        }
+        }
+        h5{
+            margin: 250px 0 0px 90px;
+        }
+        .input-1{
+            width: 300px;
+            margin: 30px 0 0px 90px;
+            background-color: transparent;
+          border-top: 0;
+          border-left: 20px;
+          border-right: 10px;
+            border-bottom-color: red;
+
+        }
+        .input-1::after{
+           border: none;
+        }
+        #box1{
+            width: 100px;
+        animation-name: shrink;
+        animation-duration: 3s;
+animation-direction: alternate-reverse;
+img{
+    width: 600px;
+    margin: 190px 0 0px 90px;
+}}
+      @keyframes shrink{
+        50%{
+            transform: scale(0.3,0.3);
+        }
+      }
+      #box2{
+            width: 100px;
+        animation-name: shrink;
+        animation-duration: 3s;
+
+img{
+    width: 600px;
+    margin: 190px 0 0px 90px;
+}}
+      @keyframes shrink{
+        50%{
+            transform: scale(0.5,0.5);
+        }
+      }
+      .button{
+        width: 300px;
+     margin-left: 40%;
+     margin-top: 30px;
+     font-size: 20px;
+     background-color: rgb(138, 230, 138);
+     color: #fff;
+     border:  1px solid rgb(138, 230, 138);
+     
+      }
+      #showbox1,#showbox2{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 class="header-h1">Animation</h1>
+</header>
+<div class="div">
+    <button class="button" onclick="opentab()">Q1: Enter Your Name </button>
+</div>
+<div class="div">
+    <button class="button" onclick="opentab1()">Q2: Enter Your Age </button>
+</div>
+<div class="div">
+    <button class="button" onclick="opentab2()">Q3: Enter Your Skils </button>
+</div>
+    <div class="row" id="showbox">
+        <div class="col-lg-6" id="box">
+           <img src="./image/banner.jpg" >
+        </div>
+<div class="col-lg-6">
+    <h5>Q1:Whats your name</h5>
+<input type="text" placeholder="Enter your name" class="input-1">
+<div>
+<button class="btn btn-success  ">Search</button>
+</div>
+</div>
+    </div>
+    
+    <div class="row" id="showbox1">
+        <div class="col-lg-6" id="box1">
+            <img src="./image/banner.jpg" >
+         </div>
+        <div class="col-lg-6">
+            <h5>Q2:Whats your Age</h5>
+        <input type="text" placeholder="Enter your Age" class="input-1">
+        <div>
+            <button class="btn btn-success  ">Search</button>
+            </div>
+        </div>
+        
+           
+    </div>
+    <div class="row" id="showbox2">
+        <div class="col-lg-6" id="box2">
+            <img src="./image/banner.jpg" >
+         </div>
+        <div class="col-lg-6">
+            <h5>Q3:Whats your skils</h5>
+        <input type="text" placeholder="Enter your Skils" class="input-1">
+        <div>
+            <button class="btn btn-success  ">Search</button>
+            </div>
+        </div>
+        
+           
+    </div>
+    <script>
+        function opentab(){
+document.getElementById("showbox").style.display ="inline";
+document.getElementById("showbox1").style.display ="none";
+document.getElementById("showbox2").style.display ="none";
+
+}
+function opentab1(){
+document.getElementById("showbox").style.display ="none";
+document.getElementById("showbox1").style.display ="inline";
+document.getElementById("showbox2").style.display ="none";
+
+}
+function opentab2(){
+document.getElementById("showbox").style.display ="none";
+document.getElementById("showbox1").style.display ="none";
+document.getElementById("showbox2").style.display ="inline";
+
+}
+
+
+
+    </script>
+</body>
+</html>
