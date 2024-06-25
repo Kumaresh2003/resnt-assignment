@@ -91,6 +91,7 @@ img{
       }
       #showbox1,#showbox2{
         display: none;
+        margin-left: 280px;
       }
     </style>
 </head>
@@ -150,21 +151,21 @@ img{
     </div>
     <script>
         function opentab(){
-document.getElementById("showbox").style.display ="inline";
+document.getElementById("showbox").style.display ="inline-block";
 document.getElementById("showbox1").style.display ="none";
 document.getElementById("showbox2").style.display ="none";
 
 }
 function opentab1(){
 document.getElementById("showbox").style.display ="none";
-document.getElementById("showbox1").style.display ="inline";
+document.getElementById("showbox1").style.display ="inline-block";
 document.getElementById("showbox2").style.display ="none";
 
 }
 function opentab2(){
 document.getElementById("showbox").style.display ="none";
 document.getElementById("showbox1").style.display ="none";
-document.getElementById("showbox2").style.display ="inline";
+document.getElementById("showbox2").style.display ="inline-block";
 
 }
 
